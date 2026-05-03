@@ -18,10 +18,11 @@ public class Concurso {
     private String idConcurso;
 
     // idconcurso, nombre, fechaInicioInscripcion, fechaFinInscripcion
-    public Concurso(String nombre, LocalDate fechaInicio, LocalDate fechaLimite) {
+    public Concurso(String nombre, LocalDate fechaInicio, LocalDate fechaLimite, String idConcurso) {
         this.nombre = nombre;
         this.fechaInicio = fechaInicio;
         this.fechaLimite = fechaLimite;
+        this.idConcurso = idConcurso;
     }
 
     public String nombre() {

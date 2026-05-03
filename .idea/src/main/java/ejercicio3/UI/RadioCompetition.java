@@ -85,8 +85,8 @@ public class RadioCompetition {
             }
         });
         lblCompetition = new JLabel("Concurso:");
-        comboBox = new JComboBox<String>();
-        concursos.todosLosConcursos(comboBox);
+//        comboBox = new JComboBox<String>();
+//        concursos.todosLosConcursos(comboBox);
     }
 
     private void layout() {

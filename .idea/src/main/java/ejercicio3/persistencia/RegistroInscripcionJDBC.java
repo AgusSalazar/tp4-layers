@@ -2,6 +2,7 @@ package ejercicio3.persistencia;
 
 import ejercicio3.modelo.RegistroConcursos;
 import ejercicio3.modelo.RegistroInscripciones;
+import ejercicio3.modelo.Persona;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

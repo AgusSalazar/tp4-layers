@@ -12,9 +12,9 @@ import java.util.List;
 public class Main {
     public List<Concurso> inicializarConcursos(){
         List<Concurso> concursosIniciales;
-        var c1 = new Concurso("Concurso de metal", LocalDate.of(2026, 3, 31), LocalDate.of(2026, 5, 10));
-        var c2 = new Concurso("Concurso de freestyle", LocalDate.of(2026, 5, 5), LocalDate.of(2026, 5, 20));
-        var c3 = new Concurso("Concurso de ajedrez", LocalDate.of(2026, 3, 30), LocalDate.of(2026, 5, 28));
+        var c1 = new Concurso("Concurso de metal", LocalDate.of(2026, 3, 31), LocalDate.of(2026, 5, 10), "1");
+        var c2 = new Concurso("Concurso de freestyle", LocalDate.of(2026, 5, 5), LocalDate.of(2026, 5, 20), "2");
+        var c3 = new Concurso("Concurso de ajedrez", LocalDate.of(2026, 3, 30), LocalDate.of(2026, 5, 28), "3");
 
         return concursosIniciales = List.of(c1, c2, c3);
     }

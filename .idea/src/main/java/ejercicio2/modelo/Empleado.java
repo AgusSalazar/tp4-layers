@@ -42,25 +42,25 @@ public class Empleado {
     }
 
     public void verificarNombre(String nombre){
-        if(nombre == null || nombre.isBlank()){
+        if(nombre == null && nombre.isBlank()){
             throw new RuntimeException("El nombre ingresado no es valido!");
         }
     }
 
     public void verificarApellido(String apellido){
-        if(apellido == null || apellido.isBlank()){
+        if(apellido == null && apellido.isBlank()){
             throw new RuntimeException("El apellido ingresado no es valido!");
         }
     }
 
     public void verificarFechaNacimiento(LocalDate fechaNacimiento){
-        if(fechaNacimiento == null || fechaNacimiento.isAfter(LocalDate.now())){
+        if(fechaNacimiento == null && fechaNacimiento.isAfter(LocalDate.now()) && fechaNacimiento == LocalDate.now()){
             throw new RuntimeException("La fecha de nacimiento ingresada no es valida!");
         }
     }
 
     public void verificarEmail(String email){
-        if(email == null || email.isBlank()){
+        if(email == null && email.isBlank()){
             throw new RuntimeException("El email ingresado no es valido!");
         }
     }
